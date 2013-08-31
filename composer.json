@@ -1,0 +1,31 @@
+{
+"name": "risto1913/std",
+"description": "",
+"license": "y",
+    "require": {
+    "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*",
+        "zf-commons/zfc-base": "v0.1.2",
+        "zf-commons/zfc-user": "dev-master"
+    },
+    "require-dev": {
+			  "soldotno/smarty3": "dev-master",
+			  "soldotno/zf2_smarty3": "dev-master",
+				"soldotno/sol_codestandards": "dev-master",	
+				"phpunit/phpunit": "3.7.*",
+        "doctrine/annotations": "1.0.*@dev",
+        "squizlabs/php_codesniffer": "1.*",
+        "zendframework/zendpdf": "2.0.*@dev",
+        "zendframework/zendservice-recaptcha": "2.0.*@dev",
+        "phing/phing": "dev-master",
+        "sebastian/diff": "1.0.*@dev",
+        "ircmaxell/security-lib": "dev-master",
+        "ircmaxell/random-lib": "dev-master",
+        "fabpot/php-cs-fixer": "dev-master",
+        "phpmd/phpmd" : "1.4.*",
+        "pdepend/pdepend" : "1.1.0",
+        "zendframework/zend-developer-tools":"dev-master",
+        "dlu/dluphpsettings": "dev-master",
+				"bjyoungblood/bjy-profiler":"dev-master"
+    }
+}

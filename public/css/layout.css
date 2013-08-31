@@ -1,0 +1,805 @@
+/* -------------------------------------------------------------- 
+	Base Styles
+-------------------------------------------------------------- */
+
+
+body.ad{
+	background-image: url(http://pagead2.googlesyndication.com/simgad/18114739790895202792);
+	background-position: center 280px;
+	background-repeat: no-repeat;
+}
+
+.wrapper{
+	width: 988px;
+	margin: auto;
+}
+
+.clearfix{
+	clear: both;
+	display: block;
+}
+
+a{
+	color: #bf1222;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------------------- 
+	Misc
+-------------------------------------------------------------- */
+
+.horizontal{
+	margin: 80px 0;
+}
+
+.horizontal.top{
+	margin: 0 0 80px 0;
+}
+
+.horizontal:last-child{
+	margin-bottom: 0;
+}
+
+.video-tag{
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-shadow: 1px 1px rgba(0, 0, 0, .6);
+	color: #fff;
+	background-color: #bf1222;
+	padding: 12px 14px;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1px;
+}
+/*
+.video-tag{
+	left: 0;
+	bottom: 0;
+	right: auto;
+	top: auto;
+}
+*/
+
+.video-block.double .video-tag{
+	left: auto;
+	bottom: auto;
+	right: 12px;
+	top: 12px;
+}
+
+.promoted .video-tag{
+	left: auto;
+	bottom: auto;
+	right: 20px;
+	top: 20px;
+}
+
+.video-tag.bolig{
+	background-color: #BF05AE;
+}
+
+.video-tag.reise{
+	background-color: #FF8600;
+}
+
+.carousel-bullets{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+
+.carousel-bullets li{
+	display: inline-block;
+	background-image: url(/images/bullet_white.png);
+	height: 15px;
+	width: 15px;
+	background-repeat: none;
+	margin-left: 2px;
+}
+
+.carousel-bullets li.active{
+	background-image: url(/images/bullet_red.png);
+}
+
+ul.filter{
+	overflow: auto;
+	text-shadow: 1px 1px rgba(0, 0, 0, .6);
+	font-size: 1.1em;
+	height: 57px;
+}
+
+ul.filter li{
+	float: left;
+	background-color: #2a2a2a;
+	height: 100%;
+	line-height: 57px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+ul.filter li:nth-child(even){
+	background-color: #333;
+}
+
+ul.filter li.active{
+	background-color: #bf1222;
+}
+
+div.overlay{
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+
+div.overlay div.title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	text-shadow: 2px 2px rgba(0, 0, 0, .6);
+	letter-spacing: 1px;
+}
+
+div.overlay div.text{
+	font-size: 1.3em;
+	text-shadow: 1px 1px rgba(0, 0, 0, .6);
+	margin-top: 1em;
+	line-height: 1.2em;
+}
+
+ul.twocolumn-list{
+	 overflow: hidden;
+}
+
+ul.twocolumn-list li{
+	float: left;
+	width: 50%;
+}
+
+/* -------------------------------------------------------------- 
+	Header + navigation
+-------------------------------------------------------------- */
+
+header{
+	border-top: 5px solid #bf1222;
+	height: 57px;
+	overflow: auto;
+	line-height: 57px;
+	min-width: 1008px;
+	z-index: 9999;
+}
+
+header div.content{
+	max-width: 1800px;
+	margin: auto;
+	height: 100%;
+}
+
+header h1{
+	background-color: #bf1222;
+	display: block;
+	height: 100%;
+	float: left;
+	padding: 0 20px;
+	font-size: 1.5em;
+	line-height: 57px;
+}
+
+header nav{
+	float: left;
+	height: 100%;
+	text-shadow: 1px 1px rgba(0, 0, 0, .6);
+}
+
+header nav#rightTopNav{
+	float: right;
+}
+
+header nav ul{
+	height: 100%;
+	font-size: 1.1em;
+}
+
+header nav ul li{
+	float: left;
+	background-color: #2a2a2a;
+	height: 100%;
+	line-height: 57px;
+	padding: 0 20px 0 20px;
+	cursor: pointer;
+}
+
+header nav ul.drop-down li{
+	padding-right: 41px;
+	background-image: url(/images/expand_arrow_light.png);
+	background-repeat: no-repeat;
+	background-position: right 26px;
+}
+
+header nav ul li:nth-child(even){
+	background-color: #333;
+}
+
+header nav ul li.expanded{
+	background-color: #151515;
+	background-image: url(/images/minimize_arrow_light.png);
+}
+
+header #searchBarTop{
+	float: left;
+	height: 100%;
+	background-color: #fff;
+}
+
+header #searchBarTop input{
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0;
+	height: 56px;
+	width: 240px;
+	padding: 0px 0 0 20px;
+	font-size: 1.1em;
+	float: left;
+}
+
+header #searchBarTop input.search-submit{
+	text-indent: -4000px;
+	display: block;
+	float: left;
+	width: 55px;
+	height: 100%;
+	background-image: url(/images/magnifying_glass_dark.png);
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 6px 9px;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------------------- 
+	Menu expand popup
+-------------------------------------------------------------- */
+
+#menuPopup{
+	width: 540px;
+	background-color: #151515;
+	position: absolute;
+	top: 337px;
+	left: 331px;
+	z-index: 999999;
+	border-bottom: 5px solid #75d3de;
+}
+
+#menuPopup div.popup-content{
+	padding: 20px;
+}
+
+#menuPopup div.popup-header{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5em;
+	letter-spacing: 1px;
+	margin-bottom: .6em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#menuPopup div.more-button-container{
+	position: absolute;
+	bottom: -45px;
+	height: 45px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#menuPopup div.more-button{
+	background-color: #75d3de;
+	height: 100%;
+	padding: 15px 20px 20px 20px;
+	box-sizing: border-box;
+	display: inline-block;
+	text-shadow: 1px 1px rgba(0, 0, 0, .8);
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+#menuPopup ul.popup-list{
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+#menuPopup ul.popup-list.big{
+	line-height: 2em;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------- 
+	Main content
+-------------------------------------------------------------- */
+
+#mainContent{
+	padding: 20px 20px 80px 20px;
+	background-color: #050505;
+	width: 988px;
+	margin: auto;
+	margin-top: 60px;
+}
+
+/* -------------------------------------------------------------- 
+	Footer
+-------------------------------------------------------------- */
+
+footer{
+	background-color: rgba(255, 255, 255, .06);
+	clear: both;
+	padding: 0 20px;
+}
+
+footer div#footerHeader{
+	border-bottom: 1px solid #2a2a2a;
+	padding: 15px 0;
+}
+
+footer div#footerHeader div.title{
+	float: left;
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+footer div#footerHeader div.copyright{
+	float: right;
+	color: #555555;
+	background-image: url(/images/sol_logo_40x40.png);
+	height: 40px;
+	min-width: 40px;
+	background-repeat: no-repeat;
+	background-position: top right;
+	line-height: 40px;
+	padding-right: 55px;
+}
+
+footer div#footerContent{
+	padding: 20px 0;
+	color: #999999;
+}
+
+footer div#footerContent div.column{
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	margin: 0;
+}
+
+footer div#footerContent ul{
+	line-height: 2em;
+	margin-bottom: 1.6em;
+	margin-right: 20px;
+}
+
+footer div#footerContent ul li{
+	
+}
+
+footer div#footerContent ul li.title{
+	color: #fff;
+	font-weight: bold;
+}
+
+/* -------------------------------------------------------------- 
+	Player / Promoted
+-------------------------------------------------------------- */
+
+div.promoted{
+}
+
+div.promoted div.promoted-info{
+}
+
+div.promoted div.carousel{
+	position: relative;
+}
+
+div.promoted img{
+	width: 100%;
+	display: block;
+}
+
+div.fixed-video-height{
+	width:988px;
+	height:556px;
+}
+
+/* -------------------------------------------------------------- 
+	Video blocks
+-------------------------------------------------------------- */
+
+div.videos{
+}
+
+div.video-block{
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	vertical-align: top;
+	white-space: normal;
+}
+
+div.video-block.double{
+	width: 50%;
+}
+
+div.videos.two div.video-block{
+	width: 50%;
+}
+
+div.video-block div.block-content{
+	position: relative;
+}
+
+div.video-block div.block-height{
+	position: relative;
+	height: 275px; /* Ikke veldig responsivt */
+}
+
+div.video-block div.thumb{
+	position: relative;
+}
+
+div.video-block img{
+	width: 100%;
+	display: block;
+}
+
+div.video-block div.channel-tag{
+	right: 12px;
+	top: 12px;
+}
+
+div.video-block div.overlay{
+	left: 20px;
+	bottom: 20px;
+}
+
+div.video-block div.overlay div.title{
+	font-size: 2em;
+	letter-spacing: 1px;
+}
+
+div.video-block div.overlay div.text{
+	font-size: 1.1em;
+	margin-top: .7em;
+}
+
+div.video-block div.description{
+	position: absolute;
+	top: 156px; /* Heller ikke veldig responsivt */ 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, .065);
+	padding: 12px;
+	border-right: 1px solid #050505;
+}
+
+div.video-block div.description div.title{
+	font-size: 1em;
+	line-height: 1.2em;
+	margin-bottom: .4em;
+}
+
+div.video-block div.description div.content{
+	color: #999;
+	font-size: .85em;
+	line-height: 1.5em;
+}
+
+div.video-block div.description div.bottom{
+	color: #999;
+	font-size: .85em;
+	position: absolute;
+	bottom: 12px;
+	color: #555;
+}
+
+div.video-block div.related-tag{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #bf1222;
+	padding: 12px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .6);
+}
+
+/* -------------------------------------------------------------- 
+	Video/Promoted/Series Info
+-------------------------------------------------------------- */
+
+div.element-info div.text-info{
+	float: left;
+	width: 620px;
+}
+
+div.element-info div.text-info.half{
+	width: 52%;
+}
+
+div.element-info div.related-video{
+	float: right;
+	width: 250px;
+}
+
+div.element-info div.meta-info{
+	width: 40%;
+	float: right;
+}
+
+div.element-info div.meta-info div.column{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.element-info div.meta-info ul.meta-list{
+	margin-bottom: 1.6em;
+	line-height: 2em;
+	margin-left: 20px;
+}
+
+div.element-info div.meta-info ul.meta-list li.title{
+	color: #555;
+}
+
+div.element-info div.related-video .video-block{
+	width: 100%;
+}
+
+div.text-info h2{
+	line-height: 1.2em;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3.3em;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin-bottom: .5em;
+}
+
+div.text-info p{
+	color: #999;
+	line-height: 1.5em;
+}
+
+div.text-info ul.tags{
+	margin-top: 1.5em;
+}
+
+div.text-info ul.tags li{
+	margin-bottom: .3em;
+}
+
+div.text-info ul.tags li span.head{
+	color: #555;
+}
+
+div.text-info ul.social{
+	margin-top: 1.8em;
+}
+
+ul.social li{
+	display: inline-block;
+	margin-right: 5px;
+	height: 40px;
+	width: 40px;
+	text-indent: -3000px;
+}
+
+ul.social li.facebook{
+	background-image: url(/images/fb-icon-tileflow.png);
+}
+
+ul.social li.googleplus{
+	background-image: url(/images/gplus-icon-tileflow.png);
+}
+
+ul.social li.pinterest{
+	background-image: url(/images/pinterest-icon-tileflow.png);
+}
+
+ul.social li.twitter{
+	background-image: url(/images/twitter-icon-tileflow.png);
+}
+
+/* -------------------------------------------------------------- 
+	Top video feed
+-------------------------------------------------------------- */
+
+div.top-content{
+	position: relative;
+	overflow: visible;
+	right:0px;
+}
+
+div.top-videos{
+	overflow-x: visible;
+	overflow-y: visible;
+	white-space: nowrap;
+	margin: 0;
+}
+
+div.top-content div.video-block{
+	width: 245px;
+}
+
+div.top-content div.video-block.double{
+	width: 492px;
+}
+
+div.top-controls{
+	width: 21px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9999;
+	cursor: pointer;
+	padding-right: 40px;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+div.top-controls.left{
+	right: auto;
+	left: 0;
+	display: none;
+	z-index: 999;
+
+}
+
+div.top-controls div.button{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url(/images/arrow-right-faded.png);
+	top: 107px;
+	right: 30px;
+	opacity: 1;
+	z-index: 999;
+}
+
+div.top-controls.left div.button{
+	right: auto;
+	left: 30px;
+	background-image: url(/images/arrow-left-faded.png);
+}
+
+div.top-controls.left div.button:active{
+	background-image: url(/images/arrow-left.png);
+}
+
+div.top-controls.right div.button:active{
+	background-image: url(/images/arrow-right.png);
+}
+
+
+
+
+/* -------------------------------------------------------------- 
+	Custom
+-------------------------------------------------------------- */
+
+.skin header h1{
+	background: none;
+}
+
+.bolig a{
+	color: #bf05ae;
+}
+
+.bolig header{
+	border-top-color: #bf05ae;
+}
+
+.bolig #mainTopNav ul li:first-child{
+	background-color: #bf05ae;
+}
+
+.bolig ul.filter li.active{
+	background-color: #bf05ae;
+}
+
+.bolig div.video-block div.related-tag{
+	background-color: #bf05ae;
+}
+
+.mat a{
+	color: #b88f4a;
+}
+
+.mat header{
+	border-top-color: #b88f4a;
+}
+
+.mat #mainTopNav ul li:first-child{
+	background-color: #b88f4a;
+}
+
+.mat ul.filter li.active{
+	background-color: #b88f4a;
+}
+
+.mat div.video-block div.related-tag{
+	background-color: #b88f4a;
+}
+
+.reise a{
+	color: #ff8600;
+}
+
+.reise header{
+	border-top-color: #ff8600;
+}
+
+.reise #mainTopNav ul li:first-child{
+	background-color: #ff8600;
+}
+
+.reise ul.filter li.active{
+	background-color: #ff8600;
+}
+
+.reise div.video-block div.related-tag{
+	background-color: #ff8600;
+}
+
+/* -------------------------------------------------------------- 
+	Style control
+-------------------------------------------------------------- */
+
+#seriesInfo{
+	display: none;
+}
+
+#playerInfo{
+	display: none;
+}
+
+#relatedVideos{
+	display: none;
+}
+
+body.single .promoted-info{
+	display: none;
+}
+
+body.single #mainHubVideos{
+	display: none;
+}
+
+body.single #playerInfo{
+	display: block;
+}
+
+body.single #relatedVideos{
+	display: block;
+}
+
+body.series .promoted-info{
+	display: none;
+}
+
+body.series #mainHubVideos{
+	display: none;
+}
+
+body.series #seriesInfo{
+	display: block;
+}
+
+body.series #relatedVideos{
+	display: block;
+}
+
