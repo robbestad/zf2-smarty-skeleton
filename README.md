@@ -1,4 +1,4 @@
-SOL TV
+Zend Framework 2 Skeleton Application Using Smarty 3
 =======================
 
 Introduction
