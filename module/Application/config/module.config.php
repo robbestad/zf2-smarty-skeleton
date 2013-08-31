@@ -11,11 +11,11 @@ return array(
 
     'metadata' => array(
         '/' => array(
-            'title'=>'RISTO',
+            'title'=>'skeleton',
             'description'=>'',
-            'keywords'=>'moro',
-            'url'=>'http://www./',
-            'image'=>'http://www.',
+            'keywords'=>'',
+            'url'=>'http://',
+            'image'=>'http://',
         ),
     ),
 
@@ -67,7 +67,6 @@ return array(
         'doctype'                  => 'HTML5',
         'not_found_template'       => 'error/404.tpl',
         'exception_template'       => 'error/index.tpl',
-        'search'                   => '/../view/application/search/search.tpl',
         'template_map' => array(
                 'layout/layout'           => __DIR__ . '/../view/layout/layout.tpl',
                 'application/index/index' => __DIR__ . '/../view/application/index/index.tpl',

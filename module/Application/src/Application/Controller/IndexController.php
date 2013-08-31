@@ -19,12 +19,13 @@ class IndexController extends AbstractActionController
 
     public function getMetadata()
     {
+			$config=$this->getServiceLocator()->get('config');
         $metadata=array(
-            'title'=>$config['metadata']['/helse/']['title'],
-            'description'=>$config['metadata']['/helse/']['description'],
-            'keywords'=>$config['metadata']['/helse/']['keywords'],
-            'url'=>$config['metadata']['/helse/']['url'],
-            'image'=>$config['metadata']['/helse/']['image'],
+            'title'=>$config['metadata']['/']['title'],
+            'description'=>$config['metadata']['/']['description'],
+            'keywords'=>$config['metadata']['/']['keywords'],
+            'url'=>$config['metadata']['/']['url'],
+            'image'=>$config['metadata']['/']['image'],
 
             );
 

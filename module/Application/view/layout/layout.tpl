@@ -4,11 +4,11 @@
 	
 	<meta charset="utf-8">
 		{assign var=metadata value=$metadata|json_decode:1}
-		<title>SOL TV</title>
+		<title>ZF2 Skeleton</title>
 		<meta name="description" content="{$metadata.title}" />
 		<meta property="og:title" content="{$metadata.title}" />
 	    <meta property="og:type" content="website" />
-	    <meta property="og:site_name" content="SOLTV" />
+	    <meta property="og:site_name" content="ZF2 Skeleton" />
 	    <meta property="og:url" content="{$metadata.url}" />
 	    <meta property="og:image" content="{$metadata.image}" />
 	    <meta property="og:description" content="{$metadata.description}" />
@@ -29,6 +29,7 @@
 				<pre>Layout.tpl
 
 				{$metadata|var_dump}
+	{debug}
 				</pre>
 	</body>
 
