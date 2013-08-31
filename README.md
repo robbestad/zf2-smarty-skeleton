@@ -4,9 +4,10 @@ Zend Framework 2 Skeleton Application Using Smarty 3
 Introduction
 ------------
 Zend Framework 2 Skeleton Application
-Built using ZF2 MVC layer
-Using Smarty 3 Templating Language
-And no.. it's _not_ the same as the official skeleton application
+
+		Built using ZF2 MVC layer
+		Using Smarty 3 Templating Language
+		And no.. it's _not_ the same as the official skeleton application
 
 
 Installation
