@@ -52,9 +52,6 @@ return array(
             ),
         ),
     ),
-    'module_layouts' => array(
-        'Application' => 'layout/layout.tpl',
-    ),
 
     'controllers' => array(
         'invokables' => array(
@@ -72,6 +69,7 @@ return array(
                 'application/index/index' => __DIR__ . '/../view/application/index/index.tpl',
                 'error/404'               => __DIR__ . '/../view/error/404.tpl',
                 'error/index'             => __DIR__ . '/../view/error/index.tpl',
+
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',

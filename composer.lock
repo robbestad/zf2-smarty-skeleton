@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "49da0b535eca2c4bfb67c8f673d32d45",
+    "hash": "3e81e694726a9d507cf11cad1b36fd4d",
     "packages": [
         {
             "name": "zendframework/zendframework",
@@ -631,12 +631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "3f7d71bf561bafea39087250f777b349438cc32e"
+                "reference": "203b3888cbdf63a134cfd415bcf1f9cfe467b208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/3f7d71bf561bafea39087250f777b349438cc32e",
-                "reference": "3f7d71bf561bafea39087250f777b349438cc32e",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/203b3888cbdf63a134cfd415bcf1f9cfe467b208",
+                "reference": "203b3888cbdf63a134cfd415bcf1f9cfe467b208",
                 "shasum": ""
             },
             "require": {
@@ -675,7 +675,71 @@
                 "task",
                 "tool"
             ],
-            "time": "2013-08-26 21:13:03"
+            "time": "2013-08-28 08:30:07"
+        },
+        {
+            "name": "phly/phly-restfully",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phly/PhlyRestfully.git",
+                "reference": "588f5fc8ffa722fcae88a982e035add8134aef3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phly/PhlyRestfully/zipball/588f5fc8ffa722fcae88a982e035add8134aef3f",
+                "reference": "588f5fc8ffa722fcae88a982e035add8134aef3f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-eventmanager": ">=2.2.0",
+                "zendframework/zend-json": ">=2.2.0",
+                "zendframework/zend-loader": ">=2.2.0",
+                "zendframework/zend-mvc": ">=2.2.0",
+                "zendframework/zend-paginator": ">=2.2.0",
+                "zendframework/zend-stdlib": ">=2.2.0",
+                "zendframework/zend-uri": ">=2.2.0",
+                "zendframework/zend-view": ">=2.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "zendframework/zend-console": ">=2.2.0",
+                "zendframework/zend-http": ">=2.2.0",
+                "zendframework/zend-navigation": ">=2.2.0",
+                "zendframework/zend-servicemanager": ">=2.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PhlyRestfully\\": "src/",
+                    "PhlyRestfullyTest\\": "test/"
+                },
+                "classmap": [
+                    "./"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Weier O'Phinney",
+                    "email": "matthew@weierophinney.net",
+                    "homepage": "http://mwop.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ZF2 Module providing structure for RESTful resources",
+            "homepage": "https://github.com/weierophinney/PhlyRestfully",
+            "keywords": [
+                "module",
+                "rest",
+                "zend",
+                "zf2"
+            ],
+            "time": "2013-08-15 14:22:55"
         },
         {
             "name": "phpmd/phpmd",
@@ -1520,6 +1584,58 @@
             "time": "2013-08-24 15:26:22"
         },
         {
+            "name": "webino/zf2nette-debug",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webino/ZF2NetteDebug.git",
+                "reference": "1479d173b6ffcfe5015a7597b9c0941b2feee51f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webino/ZF2NetteDebug/zipball/1479d173b6ffcfe5015a7597b9c0941b2feee51f",
+                "reference": "1479d173b6ffcfe5015a7597b9c0941b2feee51f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zendframework": "2.*"
+            },
+            "suggest": {
+                "webino/WebinoDraw": "XHTML Layout Renderer for Zend Framework",
+                "zendframework/ZendDeveloperTools": "Module for developer and debug tools for working with the ZF2 MVC layer. "
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Nette": "src/"
+                },
+                "classmap": [
+                    "Module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "New BSD License"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Bačinský",
+                    "email": "peter@bacinsky.sk",
+                    "homepage": "http://www.bacinsky.sk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Nette Debugger for ZF2",
+            "homepage": "http://github.com/webino/Zf2NetteDebug",
+            "keywords": [
+                "debug",
+                "debugger",
+                "zf2"
+            ],
+            "time": "2012-11-08 01:03:15"
+        },
+        {
             "name": "zendframework/zend-developer-tools",
             "version": "dev-master",
             "source": {
@@ -1676,6 +1792,7 @@
     "stability-flags": {
         "zf-commons/zfc-user": 20,
         "soldotno/smarty3": 20,
+        "phly/phly-restfully": 20,
         "soldotno/zf2_smarty3": 20,
         "soldotno/sol_codestandards": 20,
         "doctrine/annotations": 20,

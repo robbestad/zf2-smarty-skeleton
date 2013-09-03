@@ -26,11 +26,14 @@
     	<link href="/css/top.css" rel="stylesheet" type="text/css">
 	</head>
 	<body >
-				<pre>Layout.tpl
+				<div class="container">
+	<h3>Regular layout.tpl</h3>
 
-				{$metadata|var_dump}
-	{debug}
+		<pre>{$metadata|var_dump}
+		{*debug*}
 				</pre>
+				</div>
+	
 	</body>
 
 	    <script type="text/javascript" src="/min/?g=js&v22'"></script>

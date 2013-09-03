@@ -5,8 +5,10 @@ return array(
         'ZfcBase',
         'ZfcUser',
         'SmartyModule',
-				'ZendDeveloperTools',
-				'DluPhpSettings',
+        'ZendDeveloperTools',
+        'Twigly',
+        'DluPhpSettings',
+        'ZF2NetteDebug'
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
